@@ -2,7 +2,7 @@ h1 {
     color: green;
 }
 body{
-    background-color: #a5a085;
+    background-color: #cfcaa9;
 }
 
 /* toggle in label designing */
@@ -28,6 +28,7 @@ body{
     left: 1px;
     transition: all 0.5s;
 }
+
 
 /* Toggle text */
 p {

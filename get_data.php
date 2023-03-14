@@ -1,6 +1,10 @@
 
 <?php
 
+
+//This Script is use to fetch the updated values of the status of the sensors. In conjunction for the realtime 
+// and no Reload nature of the Web
+
 include("connection.php");
 
 $con = dbconnection();

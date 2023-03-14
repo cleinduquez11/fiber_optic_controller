@@ -1,5 +1,7 @@
 <?php
 
+//This Script is for deciding the automation and manual override of the FAN
+
 include("connection.php");
 
 $con = dbconnection();
@@ -34,16 +36,11 @@ if ($result1->num_rows > 0) {
 
 $con->close();
 
-if ($response[0]['temperature'] >= 20 && $response[0]['fan_status'] == "OFF") {
-  echo("FALSE");
-}
+
+
+if ($response[0]['temperature'] >= 26 && $response[0]['fan_status'] == "ON") {
+    echo "ON";
+  }
 else{
-    echo("TRUE");
+    echo "OFF";
 }
-
-// header('Content-Type: application/json');
-// echo json_encode("Temperature: ".$response[0]['temperature']);
-// echo ( "<br>");
-// echo json_encode("Light-Status: ". $response[0]['light_status']);
-
-?>

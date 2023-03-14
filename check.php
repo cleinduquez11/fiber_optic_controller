@@ -1,6 +1,6 @@
 
 <?php
-
+//This Script is for the toggling of the switches in REALTIME
 include("connection.php");
 
 $con = dbconnection();
