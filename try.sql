@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 14, 2023 at 06:15 AM
+-- Generation Time: Mar 14, 2023 at 04:36 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.31
 
@@ -33,15 +33,16 @@ CREATE TABLE `sample` (
   `light_status` varchar(255) NOT NULL,
   `pump_status` varchar(255) NOT NULL,
   `mist_status` varchar(255) NOT NULL,
-  `temperature` float NOT NULL
+  `temperature` float NOT NULL,
+  `humidity` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `sample`
 --
 
-INSERT INTO `sample` (`id`, `fan_status`, `light_status`, `pump_status`, `mist_status`, `temperature`) VALUES
-(1, 'ON', 'ON', 'ON', 'OFF', 28.9);
+INSERT INTO `sample` (`id`, `fan_status`, `light_status`, `pump_status`, `mist_status`, `temperature`, `humidity`) VALUES
+(1, 'ON', 'OFF', 'OFF', 'ON', 25, 34);
 
 --
 -- Indexes for dumped tables

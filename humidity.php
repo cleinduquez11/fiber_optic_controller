@@ -1,23 +1,22 @@
 <?php
 
-//This Script is for deciding the automation and manual override of the FAN
+//This Script is for deciding the automation and manual override of the MIST
 
 include("connection.php");
 
 $con = dbconnection();
 
 
-if (isset($_GET["temp"])) {
 
-    $temp = $_GET["temp"];
+if (isset($_GET["humid"])) {
 
-}
-else {
+    $humid = $_GET["humid"];
+} else {
     return;
 }
 
- 
-$query= "UPDATE `sample` SET `temperature` = '$temp' WHERE `sample`.`id` = 1;";
+
+$query = "UPDATE `sample` SET `humidity` = '$humid' WHERE `sample`.`id` = 1;";
 $sql = "SELECT * FROM `sample` WHERE `id` = 1";
 
 $result = $con->query($query);
@@ -37,10 +36,8 @@ if ($result1->num_rows > 0) {
 $con->close();
 
 
-
-if ($response[0]['temperature'] >= 26 && $response[0]['fan_status'] == "ON") {
+if ($response[0]['humidity'] <= 80 && $response[0]['mist_status'] == "ON") {
     echo "ON";
-  }
-else{
+} else {
     echo "OFF";
 }
