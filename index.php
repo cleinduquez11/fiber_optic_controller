@@ -9,71 +9,78 @@
 </head>
 
 <body>
-	<center>
+	<br>
+	<br>
+	<hr>
+	<!-- <center> -->
 		<div>
-			<h1>Optic Fiber Control Panels</h1>
+			<h1>Optic Fiber Control Panel</h1>
 		</div>
-		<div class="container">
+		<br>
+		<br>
+	
+		<ul class="outer-container">
 
-
+			<!-- 
 			<br>
 			<br>
 			<br>
-			<br>
-			<span>
+			<br> -->
+			<li class="container">
 				<b>Fan Switch</b>
 				<br><br>
 				<input type="checkbox" id="switch" class="checkbox" />
 				<label for="switch" class="toggle">
-					<p>OFF ON</p>
+					<p>OFF &nbsp ON</p>
 				</label>
 				<br>
-			</span>
+</li>
 
 
 
-			<br>
-			<br>
-			<span>
+			<!-- <br>
+			<br> -->
+			<li class="container">
 				<b>Light Switch</b>
 				<br><br>
 				<input type="checkbox" id="switch1" class="checkbox1" />
 				<label for="switch1" class="toggle">
-					<p>OFF ON</p>
+					<p>OFF &nbsp  ON</p>
 				</label>
 				<br>
-			</span>
+</li>
 
-			<br>
-			<br>
-			<span>
+			<!-- <br>
+			<br> -->
+			<li class="container">
 				<b>Pump Switch</b>
 				<br><br>
 				<input type="checkbox" id="switch2" class="checkbox2" />
 				<label for="switch2" class="toggle">
-					<p>OFF ON</p>
+					<p>OFF &nbsp  ON</p>
 				</label>
 				<br>
-			</span>
-			<span>
-				<br>
-				<br>
+</li>
+			<li class="container">
+				<!-- <br>
+				<br> -->
 				<b>Mist Switch</b>
 				<br><br>
 				<input type="checkbox" id="switch3" class="checkbox3" />
 				<label for="switch3" class="toggle">
-					<p>OFF ON</p>
+					<p>OFF &nbsp  ON</p>
 				</label>
 				<br>
-			</span>
+</li>
 
 
-		</div>
+</ul>
 
-	</center>
+	<!-- </center> -->
 
 	<script src="index.js"></script>
-
+	<br>
+<hr>
 </body>
 
 </html>

@@ -1,8 +1,27 @@
 h1 {
-    color: green;
+    text-align: center;
+    /* color: green; */
 }
 body{
-    background-color: #cfcaa9;
+  
+    /* background-color: #cfcaa9; */
+   
+}
+
+.container{
+    justify-content: center;
+    width: 20;
+    height: 50%;
+    /* padding: auto; */
+}
+.outer-container{
+  
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
 /* toggle in label designing */
@@ -11,7 +30,7 @@ body{
     display: inline-block;
     width: 100px;
     height: 52px;
-    background-color: #ffa550;
+    /* background-color: #ffa550; */
     border-radius: 30px;
     border: 2px solid gray;
 }
@@ -34,6 +53,7 @@ body{
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    /* font-size: 12px; */
 }
 
 /* Checkbox checked effect */
@@ -43,7 +63,7 @@ p {
 
 /* Checkbox checked toggle label bg color */
 .checkbox:checked+.toggle {
-    background-color: green;
+    /* background-color: green; */
 }
 
 /* Checkbox vanished */
@@ -57,7 +77,7 @@ p {
 
 /* Checkbox checked toggle label bg color */
 .checkbox1:checked+.toggle {
-    background-color: green;
+    /* background-color: green; */
 }
 
 /* Checkbox vanished */
@@ -71,7 +91,7 @@ p {
 
 /* Checkbox checked toggle label bg color */
 .checkbox2:checked+.toggle {
-    background-color: green;
+    /* background-color: green; */
 }
 
 /* Checkbox vanished */
@@ -85,7 +105,7 @@ p {
 
 /* Checkbox checked toggle label bg color */
 .checkbox3:checked+.toggle {
-    background-color: green;
+    /* background-color: green; */
 }
 
 /* Checkbox vanished */
